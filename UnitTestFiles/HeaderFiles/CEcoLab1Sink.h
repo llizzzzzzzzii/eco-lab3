@@ -33,9 +33,6 @@ typedef struct CEcoLab1Sink {
     /* Вспомогательные функции */
     int16_t (ECOCALLMETHOD *Advise)(/* in */ struct CEcoLab1Sink* me, /* in */IEcoLab1 *pIEcoLab1);
     int16_t (ECOCALLMETHOD *Unadvise)(/* in */ struct CEcoLab1Sink* me, /* in */IEcoLab1 *pIEcoLab1);
-   // int16_t(ECOCALLMETHOD* SetCallbackPrinter)(/* in */ struct CEcoLab1Sink* me, /* in */ void(ECOCDECLMETHOD* printer)(const void*));
-
-    //void (ECOCDECLMETHOD* m_CallbackPrinter)(const void*);
 
     /* Счетчик ссылок */
     uint32_t m_cRef;
