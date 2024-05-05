@@ -43,10 +43,6 @@ typedef struct IEcoLab1VTblEvents {
 	    int16_t (ECOCALLMETHOD *OnInsertionSortCalled)(struct IEcoLab1Events* me, const void *startPtr, size_t elem_count);
     int16_t (ECOCALLMETHOD *OnInsertionSortEnded)(struct IEcoLab1Events* me, const void *startPtr, size_t elem_count);
     int16_t (ECOCALLMETHOD *OnInsertionSortIteration)(struct IEcoLab1Events* me, const void *startPtr, size_t elem_count, int leftIdx, int rightIdx);
-    //int16_t(ECOCALLMETHOD* OnPrintStringCallback)(/* in */ struct IEcoLab1Events* me, char_t* to_print);
-    //int16_t(ECOCALLMETHOD* OnSubarrayToSortCallback)(/* in */ struct IEcoLab1Events* me, void* arr, int num, int size, int lower, int upper);
-    //int16_t (ECOCALLMETHOD* OnMedianIsReadyCallback)(/* in */ struct IEcoLab1Events* me, void* arr, int num, int size, int lower, int mid, int upper);
-    //int16_t(ECOCALLMETHOD* OnPartitionIterationCallback)(/* in */ struct IEcoLab1Events* me, void* arr, int num, int size, int lower, int upper, int i, int j, int is_swapped, int pivot);
 
 } IEcoLab1VTblEvents, *IEcoLab1VTblEventsPtr;
 
